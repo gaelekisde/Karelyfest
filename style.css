@@ -1,0 +1,53 @@
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding-top: 10%;
+    min-width: 100%;
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6D608C;
+}
+.countdown{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 1%;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 30px 10px;
+}
+.countdown div p{
+    display: grid;
+    place-items: center;
+    border: solid 1px #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #ff748c;
+}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #74ffe7;
+    font-size: 1.5rem;
+    font-weight: 400;
+}

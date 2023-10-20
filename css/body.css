@@ -1,0 +1,125 @@
+body {
+	margin: 0%;
+	background-color: #88E8DC;
+}
+#cuenta{
+text-align: center;
+}
+#cajamayor{
+	width: 100%;
+	background-color: #7AACEB;
+
+}
+.titular {
+	margin-top: 1%;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+#karelyta {
+	align-items: center;
+	width: 25%;
+	height: 25%;
+}
+#karelyta{
+	height: auto;
+	width: 100%;
+}
+  
+  #audio-player {
+	width: 300px;
+	margin: 20px auto;
+	background-color: #c40808;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+  }
+  #audiosss {
+	width: 300px;
+	margin:  50px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.music-player {
+	width: 100%;
+	margin: 5% auto;
+	background-color: #333;
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.music-player h2 {
+	font-size: 20px;
+}
+.controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+audio {
+	width: 100%;
+}
+h2{ 
+	font-size: 500%;
+	text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+#galeria  img{
+	border-radius: 8px;
+	width: 100%;
+	height: auto;
+}
+#galeria{
+	display: grid;
+	grid-template-columns: 
+		repeat(
+			auto-fit,
+			minmax(150px, 1fr)
+	);
+	gap: 32px;
+}
+section{
+	background-color: #7AACEB;
+}
+#wishlist{
+	background-color: #E0FFFA;
+}
+.cosillasd{
+	font-size: 2rem;
+}
+#fecha{
+	text-align: justify;
+	font-size: 300%;
+	font-style: 'Bad Script', cursive;
+}
+#seccion p{
+	font-family: 'Bad Script', cursive;
+	text-align: justify;
+	font-size: 200%;
+}
+#seccion a{
+	font-family: 'Bad Script', cursive;
+    align-items: center;
+	font-size: 180%;
+}
+li{
+	font-family: 'Dancing Script', cursive;
+}
+#aside img {
+width: 250px;
+height: auto;
+padding: 0 15px;
+}
+#cajilla{	
+	background-color: #6FD6FC;
+}
+#cajilla img{
+	width: 30%;
+	height: auto;
+}
