@@ -24,7 +24,7 @@ let interval = setInterval(function(){
     $days.innerHTML = days;
     $hours.innerHTML = hours;
     $minutes.innerHTML = minutes;
-    $seconds.innerHTML = ('0' + seconds).slice(-5);
+    $seconds.innerHTML = ('0' + seconds).slice(-3);
 
     // Cuando llegue a 0
     if(distance < 0){
