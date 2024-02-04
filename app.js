@@ -12,7 +12,7 @@ app.use(express.json());
 // Asegúrate de usar la ruta adecuada para el enrutador
 app.use('/', require('./router'));
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3306;
 
 app.listen(port, () => {
     console.log(`Servidor iniciado en el puerto ${port}`);
