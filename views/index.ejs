@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+            background-image: url(https://i.ibb.co/PCKzrp1/Picsart-24-01-29-15-54-47-111.jpg);
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fndo */
+            background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+.header-all {
+    width: 100%; /* Ocupa el 100% del ancho de la ventana */
+    height: auto; /* Ocupa el 100% de la altura visible de la ventana */
+    /* background: linear-gradient(#c6EBFD, #ffffff); Ajusta los colores según tus preferencias */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.contenedor-iconos{
+    height: 100%;
+    margin-top: 15%;
+    text-align: center;
+    /* margin-bottom: 25%; */
+}
+#icon-edad{
+  font-family: "Mansalva", sans-serif;
+  font-size: 8rem;
+}
+#icon-nombre{
+    font-size: 3rem;
+    font-family: "Allura", cursive;
+}
+.contenedor-codigo {
+    display: grid;
+    grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+            );
+        gap: 32px;
+}
+#fecha{
+    width: 100%;
+    height: auto;
+    margin-bottom: 7%;
+    font-family: "Mansalva", sans-serif;
+}
+#contenedor-fechas{
+    font-family: "Fira Mono", monospace;
+}
+#contenedor-frase{
+    background-color:#e2aec2;
+    font-family: "Mansalva", sans-serif;
+}
+.color-secundario{
+    color: #6d455c;
+}
+li{
+      list-style-type: none;
+      font-family: "Mansalva", sans-serif;
+}
+#karelyfest-article{
+    font-family: "Allura", cursive;
+    font-size: 4rem;
+}
+.contenedor-ubicacion{
+    padding: 24px;
+}
+.a-links{
+    color: #e7dcd6;
+}
+.subtitulos-allura{
+    font-family: "Allura", cursive;
+    font-size: 3rem;
+}
+h4{
+    font-family: "Allura", cursive;
+}
+.contenedor-dresscode{
+   background-color: #e2aec2;
+}
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    width: 75%;
+    height: auto;
+    font-family: "Mansalva", sans-serif;
+    font-size: 2rem;
+    border: solid white;
+}
+.contenedor-tabla {
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    font-family: "Raleway", sans-serif;
+   
+}
+
+table {
+    color: #fff;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background: rgba(244, 49, 182, 0.881);
+}
+
+th {
+    font-size: 80%;
+    padding: 20px 15px ;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    background: rgba(243, 140, 210, 0.881);
+    text-transform: uppercase;
+} */
+#miDiv {
+  display: none;
+  width: auto;
+}
+#miBoton{
+    border: none;
+  outline: none;
+}
+#botones{
+  border: none;
+  outline: none;
+}
+.contenedor-footer{
+    font-family: "Mansalva", sans-serif;
+    background-color: #ba56a9;
+    padding: 8%;
+}
+.contenedor-redes{
+    align-items: self-start;
+}
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+        <div class="contenedor-iconos">
+            <h1 id="icon-edad">22</h1>
+            <br><br>
+            <h2 id="icon-nombre">KarelyFest</h2>
+            <br><br><br>
+               <h3 id="fecha">─ 21 de Julio  ─ </h3>
+               <br><br><br>
+        <div class="contenedor-codigo">
+               <script> 
+                const targetDate = new Date('2024-07-21T00:00:00');
+            
+                function updateCountdown() {
+                  // Fecha actual
+                  const currentDate = new Date();
+            
+                  // Diferencia en milisegundos entre la fecha objetivo y la fecha actual
+                  const difference = targetDate - currentDate;
+            
+                  // Calcula los días, horas, minutos y segundos restantes
+                  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+                  // Actualiza el elemento HTML con la cuenta regresiva
+                  document.getElementById('dias').innerHTML = `
+                    ${days}<br>días
+                  `;
+                  document.getElementById('horas').innerHTML = `
+                    ${hours} <br>horas
+                    `;
+                  document.getElementById('minutos').innerHTML = `
+                    ${minutes}<br>minutos
+                  `;
+                  document.getElementById('segundos').innerHTML = `
+                   ${seconds}<br>segundos
+                  `;
+                }
+            
+                // Actualiza la cuenta regresiva cada segundo
+                setInterval(updateCountdown, 1000);
+                </script>
+            <div id="contenedor-fechas">
+                <div class="container text-center">
+                    <div class="row row-cols-4">
+                    <div class="col" id="dias">00</div>
+                    <div class="col" id="horas">00</div>
+                    <div class="col" id="minutos">00</div>
+                    <div class="col" id="segundos">00</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br>
+    <div id="contenedor-frase">
+        <br><br> <br>
+        <p>
+        Hay momentos en la vida que son especiales por si solos, 
+        pero compartirlos con personas tan especiales como tú, 
+        se convierten en momentos imposibles de olvidar.
+        </p>
+        <br><br>
+        <p class="color-secundario" style="text-align: left;">                      ㅤㅤㅤ──────────</p>
+        <br><br> 
+        <h4 class="color-secundario" style="font-size: 3rem">Karely</h4>
+        <br><br>
+        <p class="color-secundario" style="text-align: right">                        ──────────ㅤㅤㅤ</p><br><br>
+        <p>Me hará muy feliz que me acompañes en este día tan especial.</p>
+        <br><br>
+    </div>
+    <br><br><br><br>
+    <main>
+        <p class="color-secundario" style="text-align: right">                        ────────ㅤ</p>  </p>
+        <article>
+            <strong id="karelyfest-article">KarelyFest</strong>
+            <br><br><br>
+                <li class="color-secundario" style="font-size: 3rem;">Viernes</li>
+                <br>
+                <li class="color-secundario" style="font-size: 2rem;">21 de julio 2024</li>
+                <br>
+                <li class="color-secundario" style="font-size: 2rem;">19:00 hrs</li>
+                <br><br><br>
+
+            <div class="contenedor-ubicacion">
+                <p>Sushi charo</p>
+                <p>Tomas Morales 1595, Fundadores, 26730 Sabinas, Coah.</p>
+            </div>
+            <button id="botones" type="button" class="btn btn-primary" style="background-color: #986176; width: 150px; height: 50px;">
+            <a class="a-links" href="https://www.google.com/maps/dir//Tomas+Morales+1595,+Fundadores,+26730+Sabinas,+Coah./@27.8652483,-101.1656523,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x868ac28e83e9d7dd:0x8fb624700b436dc8!2m2!1d-101.1244301!2d27.8652104?entry=ttu" style="text-decoration: none;">
+            MAPA</a>
+            </button>
+            <br><br><br><br>
+            <section class="contenedor-dresscode">
+                <br><br><br>
+                <h6 class="subtitulos-allura">DressCode</h6>
+                 <br><br><br>
+                <div class="carrusel" id="miCarrusel">
+                    <div class="elemento">
+                <img src="https://i.ibb.co/dWWLLnN/27c448c6-9b32-45de-91c4-cf0587cbe811.jpg" style="width: 100%;"><br><br><p>Debut</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/1rG7VHy/ccd1e6ec-ac62-478d-a0da-fdd6abf12847.jpg" style="width: 100%;"><br><br><p>Fearless</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/YpL2vBK/a0e387e4-2ade-486a-8ee6-34287ebad83f.jpg" style="width: 100%;"><br><br><p>Speaknow</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/qNnMb4c/2420d0d7-5d8b-41ef-b221-07a5fd7f5019.jpg" style="width: 100%;"><br><br><p>Red</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/KqGYTSm/f7b1c7d2-3766-4457-8055-2f5789d46a05.jpg" style="width: 100%;"><br><br><p>1989</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/x1v8nNS/38e5d1de-4471-4d86-8350-cb99296a567f.jpg" style="width: 100%;"><br><br><p>Reputation</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/HHLLZKr/41609b16-c5d6-439f-a225-b244561d5abc.jpg" style="width: 100%;"><br><br><p>Lovers</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/N39Qjpq/0abce6e0-e35f-4951-aa8e-51cfd7e792d0.jpg" style="width: 100%;"><br><br><p>Evermore</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/mBT80c9/343736ca-17f9-4d65-b2d7-2974574d9436.jpg" style="width: 100%;"><br><br><p>Folklore</p><br></div>
+                    <div class="elemento">
+                <img src="https://i.ibb.co/qxJHZcG/f88bdff8-fb9a-4217-ba42-c53f42775659.jpg" style="width: 100%;"><br><br><p>Midnights</p><br></div>
+            </section>
+        </article>
+        <article id="contenedor-regalos">
+
+                <br><br>
+                <br><br>
+                <p class="color-secundario" style="text-align: right">                        ────────ㅤ</p> 
+                <h6 class="subtitulos-allura">Regalos</h6>
+                <br><br><br><br>          <br><br><br><br>
+        </article>
+    </main>
+
+    <button id="miBoton" class="btn btn-primary" style="background-color: rgba(243, 140, 210, 0.881); width: auto;">Mostrar/Ocultar Lista de invitados</button>
+       <br>  <br>
+        <div id="miDiv"">
+             <table>
+            <!-- <table class="Contenedor-tabla" class="table table-dark table-striped-columns"> -->
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Usuario de IG</th>
+                        <th scope="col">DressCode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% results.forEach((user)=>{ %>
+                        <tr>
+                            <td><%= user.nombre %></td>
+                             <td><%= user.instauser %></td>
+                             <td><%= user.dresscode %></td>
+                        </tr>
+                   <%  }) %>
+                </tbody>
+            </table>
+            <br>
+          <button id="botones" class="btn btn-primary" style="background-color: rgba(243, 140, 210, 0.881); width: auto;"><a href="/create" class="a-links">Confirmar mi asistencia</a></button>
+        </div>
+        <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+            var miDiv = document.getElementById("miDiv");
+            // Cambia el estado de visibilidad del div
+            if (miDiv.style.display === "none") {
+            miDiv.style.display = "block";
+            } else {
+            miDiv.style.display = "none";
+            }
+        });
+        </script>
+        <br>
+        <footer>
+            <div class="contenedor-footer">
+                <h6>KarelyFest</h6><br>
+
+                <div class="contenedor-redes">
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"style="width: 50px;"></a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" style="width: 50px;"></a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" style="width: 50px;"></a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
