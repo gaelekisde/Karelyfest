@@ -9,11 +9,11 @@ app.use(express.urlencoded({ extended: false }));
 // Middleware para decodificar datos JSON
 app.use(express.json());
 
-// Asegúrate de usar la ruta adecuada para el enrutador
+//
 app.use('/', require('./router'));
 
-const port = process.env.PORT || 3306;
+const port = 5000;
 
 app.listen(port, () => {
-    console.log(`Servidor iniciado en el puerto ${port}`);
+    console.log(`Servidor corriendo en http://localhost:${port}`);
 });
