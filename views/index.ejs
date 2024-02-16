@@ -14,8 +14,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+@font-face {
+    font-family: bratz;
+    src: url(bratz.ttf);
+}
     body {
             background-image: url(https://i.ibb.co/PCKzrp1/Picsart-24-01-29-15-54-47-111.jpg);
             background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fndo */
@@ -156,26 +161,49 @@ td {
   border: none;
   outline: none;
 }
+.contenedor-regalos{
+    text-align: center;
+    width: 100%;
+}
 .contenedor-footer{
     font-family: "Mansalva", sans-serif;
     background-color: #ba56a9;
-    padding: 8%;
+    padding-top: 8%;
+    padding-bottom: 5%;
 }
-.contenedor-redes img{
-   height: 80px;
+.buttons {
+  display: flex;
+  justify-content: space-around;
 }
 
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: rgba(244, 49, 182, 0.881);;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+.parrafos-interesantes{
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
 
+}
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
         <div class="contenedor-iconos">
-            <h1 id="icon-edad">22</h1>
+            <h1 id="icon-edad" class="color-secundario">22</h1>
             <br><br>
-            <h2 id="icon-nombre">KarelyFest</h2>
+            <img src="https://i.ibb.co/1nm7Z80/fontbolt.png" width="90%">
             <br><br><br>
-               <h3 id="fecha">─ 21 de Julio  ─ </h3>
+               <h3 id="fecha" class="color-secundario" >─ 21 de Julio  ─ </h3>
                <br><br><br>
         <div class="contenedor-codigo">
                <script> 
@@ -212,7 +240,7 @@ td {
                 // Actualiza la cuenta regresiva cada segundo
                 setInterval(updateCountdown, 1000);
                 </script>
-            <div id="contenedor-fechas">
+            <div id="contenedor-fechas" class="color-secundario">
                 <div class="container text-center">
                     <div class="row row-cols-4">
                     <div class="col" id="dias">00</div>
@@ -266,45 +294,61 @@ td {
             <section class="contenedor-dresscode">
                 <br><br><br>
                 <h6 class="subtitulos-allura">DressCode</h6>
+                <p class="color-secundario parrafos-interesantes" style="padding: 3%;">Queremos que te sientas cómodo y a la moda en <em>KarelyFest.</em><br> 
+                    A continuación, te proporcionamos algunas pautas para el código de vestimenta:</p>
                  <br><br><br>
                 <div class="carrusel" id="miCarrusel">
                     <div class="elemento">
-                <img src="https://i.ibb.co/dWWLLnN/27c448c6-9b32-45de-91c4-cf0587cbe811.jpg" style="width: 100%;"><br><br><p>Debut</p><br></div>
+                <img src="https://i.ibb.co/dWWLLnN/27c448c6-9b32-45de-91c4-cf0587cbe811.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Debut</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/1rG7VHy/ccd1e6ec-ac62-478d-a0da-fdd6abf12847.jpg" style="width: 100%;"><br><br><p>Fearless</p><br></div>
+                <img src="https://i.ibb.co/1rG7VHy/ccd1e6ec-ac62-478d-a0da-fdd6abf12847.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Fearless</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/YpL2vBK/a0e387e4-2ade-486a-8ee6-34287ebad83f.jpg" style="width: 100%;"><br><br><p>Speaknow</p><br></div>
+                <img src="https://i.ibb.co/YpL2vBK/a0e387e4-2ade-486a-8ee6-34287ebad83f.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Speaknow</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/qNnMb4c/2420d0d7-5d8b-41ef-b221-07a5fd7f5019.jpg" style="width: 100%;"><br><br><p>Red</p><br></div>
+                <img src="https://i.ibb.co/qNnMb4c/2420d0d7-5d8b-41ef-b221-07a5fd7f5019.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Red</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/KqGYTSm/f7b1c7d2-3766-4457-8055-2f5789d46a05.jpg" style="width: 100%;"><br><br><p>1989</p><br></div>
+                <img src="https://i.ibb.co/KqGYTSm/f7b1c7d2-3766-4457-8055-2f5789d46a05.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">1989</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/x1v8nNS/38e5d1de-4471-4d86-8350-cb99296a567f.jpg" style="width: 100%;"><br><br><p>Reputation</p><br></div>
+                <img src="https://i.ibb.co/x1v8nNS/38e5d1de-4471-4d86-8350-cb99296a567f.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Reputation</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/HHLLZKr/41609b16-c5d6-439f-a225-b244561d5abc.jpg" style="width: 100%;"><br><br><p>Lovers</p><br></div>
+                <img src="https://i.ibb.co/HHLLZKr/41609b16-c5d6-439f-a225-b244561d5abc.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Lovers</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/N39Qjpq/0abce6e0-e35f-4951-aa8e-51cfd7e792d0.jpg" style="width: 100%;"><br><br><p>Evermore</p><br></div>
+                <img src="https://i.ibb.co/N39Qjpq/0abce6e0-e35f-4951-aa8e-51cfd7e792d0.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Evermore</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/mBT80c9/343736ca-17f9-4d65-b2d7-2974574d9436.jpg" style="width: 100%;"><br><br><p>Folklore</p><br></div>
+                <img src="https://i.ibb.co/mBT80c9/343736ca-17f9-4d65-b2d7-2974574d9436.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Folklore</p><br></div>
                     <div class="elemento">
-                <img src="https://i.ibb.co/qxJHZcG/f88bdff8-fb9a-4217-ba42-c53f42775659.jpg" style="width: 100%;"><br><br><p>Midnights</p><br></div>
+                <img src="https://i.ibb.co/qxJHZcG/f88bdff8-fb9a-4217-ba42-c53f42775659.jpg" style="width: 100%;"><br><br><p style="font-family: Allura, cursive;">Midnights</p><br></div>
             </section>
         </article>
-        <article id="contenedor-regalos">
-
-                <br><br>
-                <br><br>
+        <br><br><br><br>
+        <div class="contenedor-regalos">
                 <p class="color-secundario" style="text-align: right">                        ────────ㅤ</p> 
-                <h6 class="subtitulos-allura">Regalos</h6>
-                <br><br><br><br>          <br><br><br><br>
-        </article>
+                    <br><br>
+                    <h6 class="subtitulos-allura">Regalos</h6>
+                    <br><br>
+                    <p class="color-secundario parrafos-interesantes" style="font-size: 20px; padding: 5%;" >Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, aqui te dejo algunas ideas; también lo puedes hacer en efectivo en un sobre </p>
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/03/logo-Shein.png"width="80%">
+                    <br>
+                    <button id="botones" class="btn btn-primary" style="background-color: #986176; width: 150px; height: 40px;">
+                        <a href="http://api-shein.shein.com/h5/sharejump/appjump?link=V478mSMRphI&localcountry=MX" style="text-decoration: none; color: inherit;">
+                            Ver wishlist
+                        </a>
+                    </button><br>
+                    <img src="https://media.tenor.com/0rHZLXhmuswAAAAi/love-letter.gif" style="padding-top: 20px; padding-right: 5%; width: 45%;">
+                
+        </div>
     </main>
-
+<br><br><br><br><br><br>
+<div>
+<h6 class="subtitulos-allura">Confirmacion</h6>
+    <p class="color-secundario parrafos-interesantes" style="padding: 2%;">
+        Es muy importante para nosotros contar con tu confirmación lo antes posible; <br>
+        abre la lista de invitados y registrate ;)
+    </p>
     <button id="miBoton" class="btn btn-primary" style="background-color: rgba(243, 140, 210, 0.881); width: auto;">Mostrar/Ocultar Lista de invitados</button>
        <br>  <br>
-        <div id="miDiv"">
+        <div id="miDiv">
              <table>
-            <!-- <table class="Contenedor-tabla" class="table table-dark table-striped-columns"> -->
                 <thead>
                     <tr>
                         <th scope="col">Nombre</th>
@@ -325,7 +369,7 @@ td {
                 </tbody>
             </table>
             <br>
-          <button id="botones" class="btn btn-primary" style="background-color: rgba(243, 140, 210, 0.881); width: auto;"><a href="/create" class="a-links">Confirmar mi asistencia</a></button>
+          <button id="botones" class="btn btn-primary" style="background-color: rgba(243, 140, 210, 0.881); width: auto;"><a href="/create" class="a-links" style="text-decoration: none; color: inherit;">Confirmar mi asistencia</a></button>
         </div>
         <script>
         document.getElementById("miBoton").addEventListener("click", function() {
@@ -339,15 +383,15 @@ td {
         });
         </script>
         <br>
+</div>
         <footer>
             <div class="contenedor-footer">
-                <h6>KarelyFest</h6><br>
-
-                <div class="contenedor-redes">
-                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"></a>
-                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"></a>
-                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png"></a>
-                </div>
+                <img src="https://i.ibb.co/1nm7Z80/fontbolt.png" width="90%"><br><br>
+                <section class="buttons">
+                    <a href="https://www.facebook.com/profile.php?id=100009632773959&mibextid=kFxxJD" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/karely_pop?igsh=MXViYnZ1ZDFya3AyeA==" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/karely_pop?igsh=MXViYnZ1ZDFya3AyeA==" class="fa fa-whatsapp"></a>
+                  </section>
             </div>
         </footer>
 </body>
