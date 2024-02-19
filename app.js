@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+//"start": "node app"
 app.set('view engine', 'ejs');
 
 // Middleware para decodificar datos de formularios
