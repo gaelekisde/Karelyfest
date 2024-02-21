@@ -9,9 +9,15 @@ app.use(express.urlencoded({ extended: false }));
 // Middleware para decodificar datos JSON
 app.use(express.json());
 
-//
 app.use('/', require('./router'));
 
+app.use(express.static('public'));
+
+// Configurar ruta para renderizar tu archivo EJS
+app.get('/', (req, res) => {
+  // Puedes enviar datos a tu archivo EJS aquí
+  res.render('index.ejs');
+});
 const port = 5000;
 
 app.listen(port, () => {
