@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   // Puedes enviar datos a tu archivo EJS aquí
   res.render('index.ejs');
 });
-const port = 5000;
+const port = 3241;
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
